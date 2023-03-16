@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    float principle,rate,time,interest;
+    float compound_intersest;
+    printf("Enter principle\n");
+    scanf("%f",& principle);
+    printf("enter rate\n");
+    scanf("%f",&rate);
+    printf("enter time\n");
+    scanf("%f",& time);
+    interest=(principle*rate*time)/100;
+    printf("the interest of amount is %.2f\n",interest);
+    compound_intersest=principle*pow((1+rate/100),time);
+    printf("the compound interest of amount is= %.2f",compound_intersest);
+    return 0;
+
+
+}
